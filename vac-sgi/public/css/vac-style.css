@@ -1,0 +1,148 @@
+
+.vac-titulo{
+    background-color:#004353;
+    height:auto;
+    font-family:'Open Sans', sans-serif;
+    margin:0px auto 10px;
+    width: 100%;
+}
+.vac-titulo p{
+    text-align: center;
+    margin: 10px auto;
+    font-size:42px;
+    color:#ffffff;
+  
+}
+.vacinometro{
+    width: 100%;
+    border: 30px solid #009e90;
+    height:auto;
+    background-color:#009e90;
+    font-family:'Open Sans', sans-serif;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+.vacinometro p{
+    margin: 10px auto 20px;
+    color:#ffffff;
+    text-align:center;
+    position:relative;
+}
+.vac-interno{
+    text-align: center;
+    width: 98%;
+    display: inline;
+   
+}
+
+.part-1,.part-2,.part-3{
+    width: 400px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.txt-atualizado{
+    font-size:38px;
+    width:330px;
+    position: relative;   
+}
+
+.part-2 p{
+    font-size: 42px;
+}
+.part-3 p{
+    font-size:22px;
+}
+.tempo{
+    overflow:hidden;
+    height:50px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+.tempo iframe{
+    width:350px; 
+    height:200px; 
+    margin:-80px 0px;
+    display:inline;
+}
+.doses{
+    height:150px ;
+    overflow:hidden;
+    width:400px;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-align: center;
+
+}
+.doses iframe{
+    width:400px;
+    height:180%;
+    margin:-70px 0px 0px 0px;
+    display:inline;
+}         
+.porcentagem{
+    height:90px;
+    overflow:hidden;
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-align: center;
+    width:250px;    
+}
+.porcentagem iframe{  
+    width:250px;
+    height:250px;
+    margin:-100px 0px 0px;
+    display:inline;
+}
+
+
+@media screen and (max-width: 600px){
+    .part-1,
+    .part-2,
+    .part-3{
+        width: 100%;
+        
+    }
+    .part-2 p{
+        margin-top: 40px;
+        font-size: 36px;
+    }  
+    .vac-titulo p{
+        margin-top: 0px;
+    }
+
+    .txt-atualizado{
+        margin: auto;
+    }           
+    .vacinometro{
+        
+    }    
+    .tempo{
+        width: 95%;
+        height: 40px;
+        border-radius: 10px;
+        
+    }
+   .tempo iframe{
+        width: 110%;
+        height:190px; 
+    }
+    .doses{
+        height:150px;
+        width:110%; 
+        margin: 10px -15px;
+        text-align: center;    
+    }
+    .doses iframe{
+        width:100%;
+        height:265px;
+        margin:-75px 0px 0px 0px;
+        position: relative;
+    }
+}
+*/
