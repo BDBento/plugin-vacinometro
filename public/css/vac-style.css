@@ -1,0 +1,214 @@
+:root{
+    --fundo_vacinometro:#009E90;
+    --seringa:#fafafa;
+    --detalhes_seringa:#004353;
+    --liquido:#DADE18;
+    --detalhe_interno:#0c0a0a56;
+}
+.vacinometro{
+    width: 1140px;
+    height: auto;
+    padding: 20px 0px;
+    background-color:var(--fundo_vacinometro);
+    margin: 0 auto;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.dados,
+.interno{
+    display: flex;
+}
+/*--------------------------------seringa------------------------------------ */
+.seringa{
+    width: 280px;
+}
+.agulha-1,
+.marcas-volume,
+.embulo-interno,
+.embulo{
+    background-color: var(--detalhes_seringa);
+}
+.agulha-3,
+.agulha-2,
+.agulha,
+.corpo,
+.cabo-embulo{
+    background-color:var(--seringa);
+}
+.embulo,
+.seringa{
+    height: 70px;
+}
+.seringa{
+    padding: 10px;
+}
+.agulha-1,
+.agulha-2,
+.agulha-1{
+    border-radius: 0 5px 5px 0;
+}
+.vacinometro,
+.corpo,
+.seringa-interno{
+    display: flex;
+    align-items: center;
+}
+.embulo{
+    width: 10px;
+    border-radius: 5px;
+}
+.cabo-embulo{
+    width: 40px;
+    height: 25px;
+}
+.corpo{
+    width: 150px;
+    height: 40px;
+    border-radius: 0 15px 15px 0;
+    border:5px solid var(--seringa);
+    border-left: 0px;
+}
+.cabo-embulo-interno{
+    background-color: var(--detalhe_interno);
+    width: 40%;
+    height: 25px;
+    animation: efeito 5s infinite alternate;
+}
+
+@keyframes efeito {
+  from {
+    width: 400%;
+  }
+  to {
+    width: 40%;
+  }
+}
+.embulo-interno{
+    width: 6px;
+    height: 45px;
+    border-radius: 5px;
+}
+.liquido{
+    background-color: var(--liquido);
+    width: 90%;
+    height: 35px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: flex-end;
+}
+.marcas-volume{
+    width: 2px;
+    height: 10px;
+    border-radius: 3px;
+    margin-left: 15%; 
+}
+.agulha{
+    width: 10px;
+    height: 20px; 
+}
+.agulha-1{
+    width: 10px;
+    height: 20px;
+}
+.agulha-2{
+    width: 10px;
+    height: 10px; 
+}
+.agulha-3{
+    width: 50px;
+    height: 3px;
+}
+/*--------------------------------fim seringa------------------------------------ */
+.titulo_vacinometro,
+.percentual,
+.doses_aplicadas,
+.dados-3,
+.dados-2,
+.dados-1{
+    height: auto;
+    text-align: center;
+}
+
+.titulo_vacinometro{
+    font-size: 42px;
+    margin: 0 20px;
+    position: relative;
+    left: 30px;
+    font-weight: bold;
+}
+.titulo_vacinometro p{
+    margin: 0 0px;
+}
+#txt_doses_aplicadas{
+    font-size: 32px;
+    margin: 0px auto;
+}
+.atualizado_em,
+#txt_resultado{
+    font-size: 12px;
+}
+.resultado_3,
+.resultado_2,
+.resultado_1{
+    width: 170PX;
+    height: 40px;
+    margin: 0px 10px;
+    font-size: 5px;
+    border: 2px solid var(--liquido);
+    background-color: #fff;
+}
+.doses_aplicadas_box{
+    width: 340px;
+    height: 80px;
+    margin: 0 auto;
+    border: 2px solid var(--liquido);
+    background-color: #fff;
+}
+.percentual{
+    margin-right:20px ;
+}
+.percentual_dados{
+    width: 150px;
+    height: 120px;
+    margin: 0 auto;
+    border: 2px solid var(--liquido);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .vacinometro{
+        width: 100%;
+       
+    }
+    .interno{
+        flex-flow : column wrap;
+        margin: 0 auto;
+    }
+   
+} 
+
+@media screen and (max-width: 600px) {
+    .dados{
+        flex-flow : column wrap;
+        margin: 0 16% ; 
+    }
+    .seringa{
+        width: 270px;
+    }
+    .doses_aplicadas_box{
+        width: 70%;   
+    }
+    #txt_doses_aplicadas{
+        font-size: 26px;
+    }
+    .titulo_vacinometro{
+        left: 00px;
+        font-size: 36px;
+        margin: 0 0px;
+    }
+    .percentual{
+        margin: 0px;
+    }
+   
+} 
